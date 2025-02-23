@@ -56,7 +56,11 @@ html {
   max-width: 950px;
   margin: 0 auto;
   padding: 15px;
-  line-height: 2.25;
+  /* line-height: 2.25; */
+
+  /* 参考github主题 */
+  line-height: 1.6; 
+
   color: #000;
   letter-spacing: 1.1px;
   word-break: break-word;
@@ -70,6 +74,10 @@ html {
 #write p {
   color: #333;
   margin: 10px 10px;
+
+  /* 参考github主题 */ 
+  /* margin: 0.8em 10px; */ 
+  
   /* font-family: Optima-Regular, Optima, PingFangSC-light, PingFangTC-light,
     "PingFang SC", Cambria, Cochin, Georgia, Times, "Times New Roman", serif; */
   font-family: "HarmonyOS_Sans_SC";
@@ -336,7 +344,9 @@ li.md-list-item {
 
 /* 超链接 */
 #write a {
-  color: #000;
+  /* color: #000; */
+  /* 参考github主题 */
+  color: #0969da;
 }
 
 #write a:visited {
@@ -344,7 +354,8 @@ li.md-list-item {
 }
 
 #write a:not(.md-toc-inner) {
-  font-weight: bolder;
+  /* font-weight: bolder; */ /* 原来的链接字体加粗，改掉*/
+  border-bottom: 1px solid #0969da; /* 增加下划线*/
   text-decoration: none;
   transform: all linear 0.1s;
 }
@@ -356,7 +367,8 @@ li.md-list-item {
   transform: all linear 0.1s;
 }
 
-#write p a:not(.md-toc-inner)::before {
+/* 超链接前的图标 */
+/* #write p a:not(.md-toc-inner)::before {
   content: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1024 1024'%3E%3Cpath  d='M477.934459 330.486594A50.844091 50.844091 0 0 1 406.752731 258.796425L512 152.532274a254.220457 254.220457 0 0 1 359.467726 359.467726L762.66137 618.772592a50.844091 50.844091 0 1 1-71.690168-71.690169l106.772591-106.772592a152.532274 152.532274 0 0 0-215.578947-215.578947z m70.164846 361.501489A50.844091 50.844091 0 1 1 619.789474 762.66137l-107.281033 107.281033A254.220457 254.220457 0 0 1 152.532274 512L259.813307 406.752731a50.844091 50.844091 0 1 1 72.19861 69.656405l-107.789474 107.281033a152.532274 152.532274 0 0 0 215.578947 215.578947z m-126.601788-16.77855a50.844091 50.844091 0 1 1-71.690168-71.690169l251.678252-251.678252a50.844091 50.844091 0 0 1 71.690169 71.690169z'/%3E%3C/svg%3E");
   color: #f68800;
   display: inline-block;
@@ -364,7 +376,7 @@ li.md-list-item {
   height: 1em;
   margin-right: 0.2em;
   vertical-align: sub;
-}
+} */
 
 #write a.md-toc-inner:hover {
   color: var(--element-color-deep);
