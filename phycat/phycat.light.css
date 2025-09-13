@@ -237,6 +237,7 @@ li.md-list-item {
 
 #write em {
   padding: 0 3px 0 0;
+
 }
 
 #write ul {
@@ -275,8 +276,10 @@ li.md-list-item {
   height: calc(100% - 50px);
   top: 35px;
   position: absolute;
-  border-left: 0.5px solid var(--element-color);
+  /* 列表的边界线 */
+  /* border-left: 0.5px solid var(--element-color); */
   left: -14.5px;
+  font-weight: bold;
 }
 
 /* 任务列表样式 */
@@ -316,11 +319,12 @@ li.md-list-item {
   line-height: 0.8rem;
 }
 
-#write input[type="checkbox"] {
+/* 注释复选框样式，让复选框位置恢复正常 */
+/* #write input[type="checkbox"] {
   position: absolute;
   top: 7px;
   left: -3px;
-}
+} */
 
 #write .md-task-list-item p {
   margin: 0px 1.8rem;
